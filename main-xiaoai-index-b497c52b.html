@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小艾电竞 · 从首页看懂平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f9fb;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            color: #1b1f2b;
+            line-height: 1.7;
+            padding: 2.5rem 1.25rem;
+        }
+
+        .page {
+            max-width: 680px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+            padding: 3rem 2.2rem 3.5rem;
+        }
+
+        .hero-tagline {
+            font-size: 0.85rem;
+            letter-spacing: 0.04em;
+            color: #6b7a8f;
+            text-transform: uppercase;
+            margin-bottom: 0.6rem;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+            margin-bottom: 1.8rem;
+            color: #10131c;
+        }
+
+        .intro {
+            font-size: 1rem;
+            color: #2d3748;
+            margin-bottom: 2.4rem;
+            border-left: 3px solid #dce3ed;
+            padding-left: 1.2rem;
+        }
+
+        .intro strong {
+            color: #1e293b;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            margin-bottom: 2.8rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .feature-marker {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            background: #edf2f7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #2e4b7a;
+            margin-top: 2px;
+        }
+
+        .feature-content {
+            flex: 1;
+        }
+
+        .feature-content h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+            color: #182230;
+        }
+
+        .feature-content p {
+            font-size: 0.95rem;
+            color: #3a4559;
+        }
+
+        .scenario-note {
+            background: #f2f5fa;
+            border-radius: 16px;
+            padding: 1.4rem 1.6rem;
+            margin-bottom: 2.2rem;
+            font-size: 0.95rem;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        .scenario-note span {
+            background: #dbe3ef;
+            padding: 0.1rem 0.5rem;
+            border-radius: 24px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #1f3a68;
+            margin-right: 0.3rem;
+        }
+
+        .closing {
+            border-top: 1px solid #e5eaef;
+            padding-top: 1.6rem;
+            margin-top: 0.6rem;
+            font-size: 0.95rem;
+            color: #2f3b4e;
+        }
+
+        .closing a {
+            color: #1c4a7a;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border 0.2s;
+        }
+
+        .closing a:hover {
+            border-bottom-color: #1c4a7a;
+        }
+
+        .closing .muted-hint {
+            display: block;
+            margin-top: 0.8rem;
+            font-size: 0.85rem;
+            color: #6f7d8e;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #eef2f6;
+            margin: 1.8rem 0 0.8rem;
+        }
+
+        .faq-mini {
+            margin-top: 1.6rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .faq-mini dt {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #1e2a3a;
+            margin-bottom: 0.15rem;
+        }
+
+        .faq-mini dd {
+            font-size: 0.9rem;
+            color: #3f4d63;
+            margin-left: 0;
+        }
+
+        @media (max-width: 520px) {
+            .page {
+                padding: 2rem 1.25rem;
+            }
+
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            .intro {
+                padding-left: 0.9rem;
+                font-size: 0.95rem;
+            }
+
+            .feature-grid {
+                gap: 1.2rem;
+            }
+
+            .feature-item {
+                gap: 0.7rem;
+            }
+
+            .feature-marker {
+                width: 24px;
+                height: 24px;
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="hero-tagline">快速识别 · 一站定位</div>
+        <h1>小艾电竞<br>从名字就能确认用途</h1>
+
+        <div class="intro">
+            <strong>小艾电竞</strong> 是一个围绕电竞赛事、数据与社区整合而设计的平台。  
+            无论你刚接触电竞资讯，还是需要持续跟踪赛程、战队与版本动向，这个站点都试图把信息密度控制在可读范围内——  
+            不堆砌，不悬浮，让每一个模块都指向具体用途。
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="feature-marker">1</div>
+                <div class="feature-content">
+                    <h3>赛事时间线与实时比分</h3>
+                    <p>覆盖主流赛事，按日期、地区、阶段分层展示。更新节奏接近实时，省去跨平台翻找的步骤。</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-marker">2</div>
+                <div class="feature-content">
+                    <h3>战队 · 选手 · 版本数据</h3>
+                    <p>英雄胜率、选手数据、BP 趋势以结构化表格呈现。不依赖动态图，强调可对照、可筛选的原始信息。</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-marker">3</div>
+                <div class="feature-content">
+                    <h3>社区讨论与短评聚合</h3>
+                    <p>提供赛后讨论、版本吐槽、阵容讨论等轻内容流。内容经过简单聚合，方便快速了解社区当前焦点。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scenario-note">
+            <span>🖥️ 典型场景</span> 赛前查看双方近期交手记录与选手状态；赛后浏览玩家短评与数据复盘；版本更新后快速查看英雄强度变动。  目的地始终是同一个：<a href="https://main-xiaoai.com" style="text-decoration:underline;font-weight:500;color:#1c4a7a;">小艾电竞</a>。页面偏重信息效率，不刻意增加叙事干扰。
+        </div>
+
+        <div class="closing">
+            如果你需要的是一个可以直接看清赛事进度、数据锚点与社区基本情绪的中文站点，<a href="https://main-xiaoai.com">小艾电竞</a> 已经把这些要素排列在了首页。  
+            没有多余的门槛，打开即用，信息结构不绕路。
+            <span class="muted-hint">不需要额外的介绍页，首页本身就说明了用途。</span>
+        </div>
+
+        <hr>
+
+        <dl class="faq-mini">
+            <dt>Q：这个站适合只看某款游戏的人吗？</dt>
+            <dd>A：覆盖多款主流电竞项目，同时保留筛选入口，可以只关注你玩的游戏。</dd>
+            <dt>Q：数据来源和更新频率？</dt>
+            <dd>A：基于公开赛事接口与官方数据，赛后数据延迟通常在数分钟至数十分钟内。</dd>
+            <dt>Q：有深度分析文章吗？</dt>
+            <dd>A：没有长文专栏。强调数据呈现与社区短评，深度分析需要跳转第三方内容源。</dd>
+        </dl>
+    </div>
+</body>
+</html>
